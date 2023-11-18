@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CoinVista/static/css/main.b13672ef.css",
+    "main.js": "/CoinVista/static/js/main.234996b2.js",
+    "static/media/logo.svg": "/CoinVista/static/media/logo.12f77eb0ac0690c87e9ad65fb2c86c75.svg",
+    "index.html": "/CoinVista/index.html",
+    "main.b13672ef.css.map": "/CoinVista/static/css/main.b13672ef.css.map",
+    "main.234996b2.js.map": "/CoinVista/static/js/main.234996b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b13672ef.css",
+    "static/js/main.234996b2.js"
+  ]
+}
