@@ -1,0 +1,122 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.page {
+  padding-top: calc(64px + 2.5rem);
+  padding-bottom: 2.5rem;
+  padding-left: calc(300px + 2.5rem);
+  padding-right: 2.5rem;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+
+  @media (max-width: 1200px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.loading-bar {
+  width: 100%;
+  height: calc(100vh - 5rem - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.btn-outline {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--blue-text-color);
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+
+  a {
+    color: var(--blue-text-color);
+  }
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 12px;
+  }
+
+  &:hover {
+    background-color: rgba(31, 38, 46, 0.4);
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+h1 {
+  @media (max-width: 400px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 1rem;
+  }
+}
+
+.search-input {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgb(31, 38, 46);
+  transition: 0.3s;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    border-color: rgb(47, 58, 70);
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 0.5rem 10px calc(1rem + 0.5rem + 20px);
+    outline: 0;
+    border: 0;
+    background-color: #161b20;
+    color: white;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+
+    svg {
+      font-size: 20px;
+      color: var(--blue-text-color);
+    }
+  }
+}

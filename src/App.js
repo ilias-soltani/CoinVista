@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { React } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+
+import {
+  Navbar,
+  Footer,
+  Home,
+  Cryptocurrencies,
+  Exchanges,
+  News,
+  CryptoDetails,
+} from "./components";
+import ScrollToTop from "./helper/ScrollToTop";
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <ScrollToTop />
+        <Routes>
+          <Route
+            path="/"
+            element={<Home />}
+            onUpdate={() => window.scrollTo(0, 0)}
+          />
+          <Route
+            path="/cryptocurrencies"
+            element={<Cryptocurrencies />}
+            onUpdate={() => window.scrollTo(0, 0)}
+          />
+          <Route
+            path="/exchanges"
+            element={<Exchanges />}
+            onUpdate={() => window.scrollTo(0, 0)}
+          />
+          <Route
+            path="/news"
+            element={<News />}
+            onUpdate={() => window.scrollTo(0, 0)}
+          />
+          <Route
+            path="/crypto/:id"
+            element={<CryptoDetails />}
+            onUpdate={() => window.scrollTo(0, 0)}
+          />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -1,0 +1,129 @@
+.footer {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: calc(300px + 2.5rem);
+  padding-right: 2.5rem;
+  background-color: var(--primary-color);
+
+  @media (max-width: 1200px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .side-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+
+    a {
+      display: block;
+      padding: 6px 8px;
+      transition: 0.3s;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: rgba(51, 153, 255, 0.08);
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+
+      span {
+        color: var(--blue-text-color);
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        svg {
+          font-size: 1rem;
+          color: var(--blue-text-color);
+        }
+      }
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+
+  .links {
+    display: flex;
+    align-items: center;
+
+    .links-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 8px;
+      cursor: pointer;
+
+      &:hover {
+        svg {
+          transform: translateX(2px) translateY(-2px);
+        }
+      }
+
+      span {
+        color: var(--blue-text-color);
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        svg {
+          font-size: 14px;
+          color: var(--blue-text-color);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .icon {
+      cursor: pointer;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      transition: 0.3s;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+
+      svg {
+        color: #9da8b7;
+        font-size: 20px;
+      }
+    }
+  }
+}
