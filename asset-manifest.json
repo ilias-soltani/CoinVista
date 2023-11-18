@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.b13672ef.css",
-    "main.js": "/static/js/main.fbc62f2d.js",
-    "static/media/logo.svg": "/static/media/logo.12f77eb0ac0690c87e9ad65fb2c86c75.svg",
-    "index.html": "/index.html",
-    "main.b13672ef.css.map": "/static/css/main.b13672ef.css.map",
-    "main.fbc62f2d.js.map": "/static/js/main.fbc62f2d.js.map"
+    "main.css": "/CoinVista/static/css/main.b13672ef.css",
+    "main.js": "/CoinVista/static/js/main.234996b2.js",
+    "static/media/logo.svg": "/CoinVista/static/media/logo.12f77eb0ac0690c87e9ad65fb2c86c75.svg",
+    "index.html": "/CoinVista/index.html",
+    "main.b13672ef.css.map": "/CoinVista/static/css/main.b13672ef.css.map",
+    "main.234996b2.js.map": "/CoinVista/static/js/main.234996b2.js.map"
   },
   "entrypoints": [
     "static/css/main.b13672ef.css",
-    "static/js/main.fbc62f2d.js"
+    "static/js/main.234996b2.js"
   ]
 }
