@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { HiBars2, HiMiniXMark } from "react-icons/hi2";
 import { GoHomeFill } from "react-icons/go";
 import { BsFillBarChartFill } from "react-icons/bs";
-import { FaMoneyBillWave } from "react-icons/fa";
-import { AiOutlineWechat } from "react-icons/ai";
 import { useSelector, useDispatch } from "react-redux";
 
 import { setActivePage } from "../../services/activePageSlice.js";
@@ -15,8 +13,6 @@ const Navbar = () => {
   const list = [
     { icon: GoHomeFill, name: "Home" },
     { icon: BsFillBarChartFill, name: "Cryptocurrencies" },
-    { icon: FaMoneyBillWave, name: "Exchanges" },
-    { icon: AiOutlineWechat, name: "News" },
   ];
 
   const { activePage } = useSelector((state) => state.ActivePage);

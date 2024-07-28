@@ -11,12 +11,7 @@ import { setActivePage } from "../../services/activePageSlice";
 import "./Footer.scss";
 
 const Footer = () => {
-  const list = [
-    { name: "Home" },
-    { name: "Cryptocurrencies" },
-    { name: "Exchanges" },
-    { name: "News" },
-  ];
+  const list = [{ name: "Home" }, { name: "Cryptocurrencies" }];
 
   const dispatch = useDispatch();
 

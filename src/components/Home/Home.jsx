@@ -156,17 +156,6 @@ const Home = () => {
               </table>
             </div>
           </div>
-
-          <div className="news">
-            <div className="heading">
-              <h1>Latest News</h1>
-              <button className="btn-outline">
-                <Link to={"/news"} onClick={() => changeActive("News")}>
-                  Show more
-                </Link>
-              </button>
-            </div>
-          </div>
         </>
       )}
     </div>
