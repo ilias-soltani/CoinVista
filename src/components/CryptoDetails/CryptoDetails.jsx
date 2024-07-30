@@ -6,6 +6,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { GoArrowUpRight } from "react-icons/go";
+import NotFound from "../NotFound/NotFound";
 
 import {
   useGetCryptoDetailsQuery,
@@ -22,7 +23,7 @@ const CryptoDetails = () => {
 
   const [chartTime, setChartTime] = useState("7d");
 
-  const { data, isLoading } = useGetCryptoDetailsQuery(id);
+  const { data, isLoading, isError } = useGetCryptoDetailsQuery(id);
   const { data: coinHistory } = useGetCryptoHistoryQuery({
     id,
     time: chartTime,
@@ -39,6 +40,10 @@ const CryptoDetails = () => {
   const time = ["3h", "24h", "7d", "30d", "1y", "3m", "3y", "5y"];
 
   const { stats, genericStats } = getStats(cryptoDetails);
+
+  if (isError && !isLoading) {
+    return <NotFound />;
+  }
 
   return (
     <div className="page">

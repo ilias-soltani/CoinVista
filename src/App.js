@@ -6,10 +6,9 @@ import {
   Footer,
   Home,
   Cryptocurrencies,
-  Exchanges,
-  News,
   CryptoDetails,
 } from "./components";
+import NotFound from "./components/NotFound/NotFound.jsx";
 import ScrollToTop from "./helper/ScrollToTop";
 import "./App.scss";
 
@@ -31,18 +30,14 @@ function App() {
             onUpdate={() => window.scrollTo(0, 0)}
           />
           <Route
-            path="/exchanges"
-            element={<Exchanges />}
-            onUpdate={() => window.scrollTo(0, 0)}
-          />
-          <Route
-            path="/news"
-            element={<News />}
-            onUpdate={() => window.scrollTo(0, 0)}
-          />
-          <Route
             path="/crypto/:id"
             element={<CryptoDetails />}
+            onUpdate={() => window.scrollTo(0, 0)}
+          />
+
+          <Route
+            path="*"
+            element={<NotFound />}
             onUpdate={() => window.scrollTo(0, 0)}
           />
         </Routes>
